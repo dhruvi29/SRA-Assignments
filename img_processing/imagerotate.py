@@ -8,7 +8,7 @@ img=im.open("rotate.png")
 hexme=np.array(img)
 h,w,c=hexme.shape
 don=np.zeros((h+500,w+500,c),dtype=np.uint8)
-radians=math.pi/3
+radians=math.pi/180*input("enter your angle")
 c, s = math.cos(radians), math.sin(radians)
 lol = np.array([[c, -s], [s, c]])
 for i in range(h):
