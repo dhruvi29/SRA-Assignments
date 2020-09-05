@@ -4,4 +4,5 @@ SRA practice Assignments
 aliasing existing and edges are being cut
 ### Masking
 mean_filter is done
-weighted_filter is in process
+weighted_filter done
+median filter done
