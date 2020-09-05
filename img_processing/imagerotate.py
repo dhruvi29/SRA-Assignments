@@ -4,11 +4,11 @@ import matplotlib.image as img
 from PIL import Image as im
 import math
 
-img=im.open("rotate.png")
+img=im.open("SRA-Assignments/img_processing/rotate.png")
 hexme=np.array(img)
 h,w,c=hexme.shape
 don=np.zeros((h+500,w+500,c),dtype=np.uint8)
-radians=math.pi/180*input("enter your angle")
+radians=math.pi/180*int(input("enter your angle: "))
 c, s = math.cos(radians), math.sin(radians)
 lol = np.array([[c, -s], [s, c]])
 for i in range(h):
