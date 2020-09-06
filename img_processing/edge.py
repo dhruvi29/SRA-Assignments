@@ -123,8 +123,8 @@ def sobel_edge(hexme):
 # def canny_edge(hexme):
 
 # hexme=vertical_edge(hexme)
-hexme=horizontal_edge(hexme)
-# hexme=sobel_edge(hexme)
+# hexme=horizontal_edge(hexme)
+hexme=sobel_edge(hexme)
 # hexme=gray_me(hexme)
 # hexme=weighted_filter(hexme)
 po = im.fromarray(hexme)

@@ -6,3 +6,6 @@ aliasing existing and edges are being cut
 mean_filter is done
 weighted_filter done
 median filter done
+###  morphology done
+### masking done
+

@@ -106,7 +106,7 @@ def laplacian_sharpning(hexme):
 
 # hexme=mean_filter(hexme)
 # hexme=weighted_filter(hexme)
-hexme=median_filter(hexme)
-# hexme=laplacian_sharpning(hexme)
+# hexme=median_filter(hexme)
+hexme=laplacian_sharpning(hexme)
 po = im.fromarray(hexme)
 im._show(po)

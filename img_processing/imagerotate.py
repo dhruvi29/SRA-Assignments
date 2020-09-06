@@ -23,5 +23,6 @@ for i in range(h):
         if(x>=0 and y>=0 and x<822 and y<1100):
             don[x,y]=hexme[i,j]
 po = im.fromarray(don)
+po.save("rotate.png")
 im._show(po)
 # print(don)
