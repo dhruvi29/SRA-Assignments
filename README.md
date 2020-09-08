@@ -32,7 +32,7 @@
 |vertical-edge|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
 #### Morphological Transformations
 |filter|orignal image|processed image|
-|---|---|
+\---|---|---|
 |dialation|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
 |erosion|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
 #### Masking
