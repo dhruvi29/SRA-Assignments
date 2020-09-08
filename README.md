@@ -21,25 +21,25 @@
 #### Bluring and Sharpning
 |filter|orignal image|processed image|
 |---|---|---|
-|mean-filter|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
-|gaussian-filter|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
-|median-filter|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
-|sharpning|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
+|mean-filter|![orignal image](/img_processing/orignal_assets/blur.jpeg)|![orignal image](/img_processing/orignal_assets/rotate.png)|
+|gaussian-filter|![orignal image](/img_processing/orignal_assets/blur.jpeg)|![orignal image](/img_processing/orignal_assets/rotate.png)|
+|median-filter|![orignal image](/img_processing/orignal_assets/blur.jpeg)|![orignal image](/img_processing/orignal_assets/rotate.png)|
+|sharpning|![orignal image](/img_processing/orignal_assets/filter.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
 #### Edge Detection
 |filter|orignal image|processed image|
 |---|---|---|
-|horizontal-edge|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
-|vertical-edge|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
+|horizontal-edge|![orignal image](/img_processing/orignal_assets/edge-detection.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
+|vertical-edge|![orignal image](/img_processing/orignal_assets/edge-detection.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
 #### Morphological Transformations
 |filter|orignal image|processed image|
-\---|---|---|
-|dialation|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
-|erosion|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
+|---|---|---|
+|dialation|![orignal image](/img_processing/orignal_assets/morphological.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
+|erosion|![orignal image](/img_processing/orignal_assets/morphological.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
 #### Masking
 |orignal image|processed image|
 |---|---|
-|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
+|![orignal image](/img_processing/orignal_assets/mask.jpg)|![orignal image](/img_processing/orignal_assets/rotate.png)|
 #### Region of Intrest
 |orignal image|processed image|
 |---|---|
-|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
+|![orignal image](/img_processing/orignal_assets/roi.jpg)|![orignal image](/img_processing/orignal_assets/rotate.png)|
