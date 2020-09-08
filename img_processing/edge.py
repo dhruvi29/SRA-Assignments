@@ -5,10 +5,10 @@ from PIL import Image as im
 import math
 
 
-img=im.open("SRA-Assignments/img_processing/edge-detection2.jpg")
+img=im.open("SRA-Assignments/img_processing/edge-detection.png")
 hexme=np.array(img)
 h,w,c=hexme.shape
-print(hexme)
+# print(hexme)
 
 def gray_me(hexme):
     gray=np.zeros((h,w))
@@ -17,115 +17,31 @@ def gray_me(hexme):
             gray[i,j]=0.3*hexme[i,j,0]+0.59*hexme[i,j,1]+0.11*hexme[i,j,2]
     return gray
 
+def apply_kernel(kernel,img):
+    print(kernel)
+    local=np.zeros((3,3),img.dtype)
+    h,w=img.shape
+    for i in range(3,h-3):
+        for j in range(3,w-3):
+            local=img[i-1:i+2,j-1:j+2]
+            kernel=local*kernel
+            print(kernel)
+            kernel=np.sum(kernel,axis=0)
+            kernel=np.sum(kernel,axis=0)
+            if(kernel<0):kernel=0
+            elif(kernel>255):kernel=255
+            img[i,j]=kernel
+            
+    # img=img/img.max()*255
+    return img
 
-def weighted_filter(hexme):
-    sumi=np.zeros((5,5,3),dtype=np.uint32)
-    weight=np.array([1,4,6,4,1,4,16,24,16,4,6,24,36,24,6,1,4,6,4,1,4,16,24,16,4])
-    # weight=np.reshape(weight,(5,5))
-    weight.shape=(5,5)
-    # print(weight.shape)
-    # print(hexme)
-    # print(weight)
-    for i in range(h):
-        for j in range(w):
-            if(i<=5 or j<=5 or i>=h-5 or j>=w-5):
-                continue
-            else:
-                sumi=hexme[i-2:i+3,j-2:j+3]
-                sumi=sumi*weight
-            sumi=np.sum(sumi,axis=0)
-            sumi=np.sum(sumi,axis=0)//256
-            # print(sumi)
-            hexme[i,j]=sumi
-    # print(hexme)
-    return hexme
-
-
-
-def vertical_edge(hexme):
-    hexme=gray_me(hexme)
-    hexme=weighted_filter(hexme)
-    sumi=np.zeros((3,3),dtype=np.uint32)
-    weight=np.array([1,0,-1,1,0,-1,1,0,-1])
-    weight.shape=(3,3)
-    print(weight)
-    for i in range(h):
-        for j in range(w):
-            if(i<=5 or j<=5 or i>=h-5 or j>=w-5):
-                continue
-            else:
-                sumi=hexme[i-1:i+2,j-1:j+2]
-                sumi=sumi*weight
-            sumi=np.sum(sumi,axis=0)
-            sumi=np.sum(sumi,axis=0)
-            if(sumi>255):sumi=255
-            elif(sumi<0):sumi=0
-            hexme[i,j]=sumi
-    return hexme
-
-
-
-def horizontal_edge(hexme):
-    hexme=gray_me(hexme)
-    hexme=weighted_filter(hexme)
-    sumi=np.zeros((5,5,3),dtype=np.uint32)
-    weight=np.array([-1,-1,-1,0,0,0,1,1,1])
-    weight.shape=(3,3)
-    print(weight)
-    for i in range(h):
-        for j in range(w):
-            if(i<=5 or j<=5 or i>=h-5 or j>=w-5):
-                continue
-            else:
-                sumi=hexme[i-1:i+2,j-1:j+2]
-                # print(hexme[i-1:i+2,j-1:j+2])
-                sumi=sumi*weight
-            sumi=np.sum(sumi,axis=0)
-            sumi=np.sum(sumi,axis=0)
-            # print(sumi)
-            if(sumi>200):sumi=255
-            elif(sumi<50):sumi=0
-            hexme[i,j]=sumi
-    # print(hexme)
-    return hexme
-
-def sobel_edge(hexme):
-    hexme=gray_me(hexme)
-    hexme=weighted_filter(hexme)
-    sumx=np.zeros((3,3),dtype=np.uint32)
-    sumy=np.zeros((3,3),dtype=np.uint32)
-    gx=np.array([1,0,-1,2,0,-2,1,0,-1])
-    gy=np.array([-1,-2,-1,0,0,0,1,2,1])
-    gx.shape=(3,3)
-    gy.shape=(3,3)
-    print(hexme.shape)
-    print(gx)
-    print(gy)
-    for i in range(h):
-        for j in range(w):
-            if(i<=5 or j<=5 or i>=h-5 or j>=w-5):
-                continue
-            else:
-                sumx=hexme[i-1:i+2,j-1:j+2]
-                sumy=hexme[i-1:i+2,j-1:j+2]
-                sumx =sumx*gx
-                sumy =sumx*gy
-            sumx=np.sum(sumx,axis=0)
-            sumx=np.sum(sumx,axis=0)
-            sumy=np.sum(sumy,axis=0)
-            sumy=np.sum(sumy,axis=0)
-            sumi=int(math.sqrt(sumx**2+sumy**2))
-            # if(sumi>200):sumi=255
-            # elif(sumi<50):sumi=0
-            hexme[i,j]=sumy
-    return hexme
-
-# def canny_edge(hexme):
-
+img=gray_me(hexme)
+kernel=np.array([[-1,-2,-1],[0,0,0],[1,2,1]])
+img=apply_kernel(kernel,img)
 # hexme=vertical_edge(hexme)
 # hexme=horizontal_edge(hexme)
-hexme=sobel_edge(hexme)
+# hexme=sobel_edge(hexme)
 # hexme=gray_me(hexme)
 # hexme=weighted_filter(hexme)
-po = im.fromarray(hexme)
+po = im.fromarray(img)
 im._show(po)

@@ -37,9 +37,9 @@
 |erosion|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
 #### Masking
 |orignal image|processed image|
-|---|---|---|
+|---|---|
 |![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
 #### Region of Intrest
 |orignal image|processed image|
-|---|---|---|
+|---|---|
 |![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/orignal_assets/rotate.png)|
