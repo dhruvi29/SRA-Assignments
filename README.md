@@ -2,18 +2,18 @@
 ***
 ## Image Processing
 > ### Contents
-> 1. .[Image Rotation](#### Image Rotation)
-> 1. .[Bluring and Sharpning](#### Bluring and Sharpning)
+> 1. .[Image Rotation](#Image-Rotation)
+> 1. .[Bluring and Sharpning](#Bluring-and-Sharpning)
 >    - Mean, Gausian and Median Blur
 >    - Laplacian filter for sharpning
-> 1. .[Edge Detection](#### Edge Detection)
+> 1. .[Edge Detection](#Edge-Detection)
 >    - Sobel
 >    - Canny  
-> 1. .[Morphological Transformations](#### Morphological Transformations)
+> 1. .[Morphological Transformations](#Morphological-Transformations)
 >    - Dialation
 >    - Erosion
-> 1. .[Masking](#### Masking)
-> 1. .[Region of Intrest](#### Region of Intrest)
+> 1. .[Masking](#Masking)
+> 1. .[Region of Intrest](#Region-of-Intrest)
 #### Image Rotation
 |orignal image|processed image|
 |---|---|
