@@ -15,6 +15,8 @@
 > 1. .[Masking](#Masking)
 > 1. .[Region of Intrest](#Region-of-Intrest)
 #### Image Rotation
+>aliasing can be removed by interpolation or inverse matrix method
+>bounding is to be done by translation
 |orignal image|processed image|
 |---|---|
 |![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/processed_assets/rotate.png)|
@@ -24,7 +26,7 @@
 |mean-filter|![orignal image](/img_processing/orignal_assets/blur.jpeg)|![orignal image](/img_processing/processed_assets/box-blur.png)|
 |gaussian-filter|![orignal image](/img_processing/orignal_assets/blur.jpeg)|![orignal image](/img_processing/processed_assets/gausian.png)|
 |median-filter|![orignal image](/img_processing/orignal_assets/filter.png)|![orignal image](/img_processing/processed_assets/median.png)|
-|sharpning|![orignal image](/img_processing/orignal_assets/filter.png)|![orignal image](/img_processing/processed_assets/sharpen.png)|
+|sharpening|![orignal image](/img_processing/orignal_assets/filter.png)|![orignal image](/img_processing/processed_assets/sharpen.png)|
 #### Edge Detection
 |filter|orignal image|processed image|
 |---|---|---|
