@@ -28,8 +28,8 @@
 #### Edge Detection
 |filter|orignal image|processed image|
 |---|---|---|
-|horizontal-edge|![orignal image](/img_processing/orignal_assets/edge-detection2.png)|![orignal image](/img_processing/processed_assets/vertical.png)|
-|vertical-edge|![orignal image](/img_processing/orignal_assets/edge-detection2.png)|![orignal image](/img_processing/processed_assets/horizontal.png)|
+|horizontal-edge|![orignal image](/img_processing/orignal_assets/edge-detection2.jpg)|![orignal image](/img_processing/processed_assets/vertical.png)|
+|vertical-edge|![orignal image](/img_processing/orignal_assets/edge-detection2.jpg)|![orignal image](/img_processing/processed_assets/horizontal.png)|
 #### Morphological Transformations
 |filter|orignal image|processed image|
 |---|---|---|
