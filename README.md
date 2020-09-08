@@ -15,8 +15,8 @@
 > 1. .[Masking](#Masking)
 > 1. .[Region of Intrest](#Region-of-Intrest)
 #### Image Rotation
--aliasing can be removed by interpolation or inverse matrix method
--bounding is to be done by translation
+- aliasing can be removed by interpolation or inverse matrix method
+- bounding is to be done by translation
 |orignal image|processed image|
 |---|---|
 |![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/processed_assets/rotate.png)|
