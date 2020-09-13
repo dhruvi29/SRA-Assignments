@@ -46,5 +46,5 @@ bounding is to be done by translation
 |orignal image|processed image|
 |---|---|
 |![orignal image](/img_processing/orignal_assets/roi.jpg)|![orignal image](/img_processing/processed_assets/roi.png)|
-## Acknoledgement
+## Acknowledgement
 [SRA](https://github.com/SRA-VJTI)
