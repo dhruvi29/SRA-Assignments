@@ -17,9 +17,9 @@
 #### Image Rotation
 aliasing can be removed by interpolation or inverse matrix method<br>
 bounding is to be done by translation
-|orignal image|processed image|
-|---|---|
-|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/processed_assets/rotate.png)|
+|orignal image|processed image|aliasing removed|
+|---|---|---|
+|![orignal image](/img_processing/orignal_assets/rotate.png)|![orignal image](/img_processing/processed_assets/rotate.png)|![orignal image](/img_processing/processed_assets/rotate2.png)
 #### Bluring and Sharpning
 |filter|orignal image|processed image|
 |---|---|---|
