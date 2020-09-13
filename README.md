@@ -30,9 +30,9 @@ bounding is to be done by translation
 #### Edge Detection
 |filter|orignal image|processed image|
 |---|---|---|
-|horizontal-edge|![orignal image](/img_processing/orignal_assets/edge-detection2.jpg)|![orignal image](/img_processing/processed_assets/vertical.png)|
-|vertical-edge|![orignal image](/img_processing/orignal_assets/edge-detection2.jpg)|![orignal image](/img_processing/processed_assets/hoerizontal.png)|
-|vertical-edge|![orignal image](/img_processing/orignal_assets/edge-detection2.jpg)|![orignal image](/img_processing/processed_assets/sobel.png)|
+|vertical-edge|![orignal image](/img_processing/orignal_assets/edge-detection2.jpg)|![orignal image](/img_processing/processed_assets/vertical.png)|
+|horizontal-edge|![orignal image](/img_processing/orignal_assets/edge-detection2.jpg)|![orignal image](/img_processing/processed_assets/hoerizontal.png)|
+|sobel-edge|![orignal image](/img_processing/orignal_assets/edge-detection2.jpg)|![orignal image](/img_processing/processed_assets/sobel.png)|
 #### Morphological Transformations
 |filter|orignal image|processed image|
 |---|---|---|
@@ -46,3 +46,5 @@ bounding is to be done by translation
 |orignal image|processed image|
 |---|---|
 |![orignal image](/img_processing/orignal_assets/roi.jpg)|![orignal image](/img_processing/processed_assets/roi.png)|
+## Acknoledgement
+[SRA](https://github.com/SRA-VJTI)
