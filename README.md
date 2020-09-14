@@ -13,7 +13,7 @@
 >    - Dialation
 >    - Erosion
 > 1. .[Masking](#Masking)
-> 1. .[Region of Intrest](#Region-of-Intrest)
+> 1. .[Region of Interest](#Region-of-Intrest)
 #### Image Rotation
 aliasing can be removed by interpolation or inverse matrix method<br>
 bounding is to be done by translation
