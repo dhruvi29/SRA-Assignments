@@ -5,7 +5,7 @@ from PIL import Image as im
 import math
 
 
-img=im.open("img_processing/orignal_assets/edge-detection2.jpg")
+img=im.open("lovely me.png")
 img=np.array(img)
 h,w,c=img.shape
 # print(hexme)
