@@ -1,2 +1,2 @@
 # assignment 1
-![8-bit memory]("Screenshot (239).png")
+![8-bit memory](8-bit.png)
