@@ -13,7 +13,7 @@
 >    - Dialation
 >    - Erosion
 > 1. .[Masking](#Masking)
-> 1. .[Region of Intrest](#Region-of-Intrest)
+> 1. .[Region of Interest](#Region-of-Intrest)
 #### Image Rotation
 aliasing can be removed by interpolation or inverse matrix method<br>
 bounding is to be done by translation
@@ -46,5 +46,5 @@ bounding is to be done by translation
 |orignal image|processed image|
 |---|---|
 |![orignal image](/img_processing/orignal_assets/roi.jpg)|![orignal image](/img_processing/processed_assets/roi.png)|
-## Acknoledgement
+## Acknowledgement
 [SRA](https://github.com/SRA-VJTI)
